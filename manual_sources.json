@@ -1,0 +1,788 @@
+[
+  {
+    "name": "北京大学-通知公告",
+    "type": "HTML",
+    "url": "https://www.gotopku.cn/tzgg/index.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://www.gotopku.cn/tzgg/index.htm"
+      ],
+      "detailPattern": "https://www\\.gotopku\\.cn/tzgg/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "北京航空航天大学-通知公告",
+    "type": "HTML",
+    "url": "https://zs.buaa.edu.cn/tzgg.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zs.buaa.edu.cn/tzgg.htm"
+      ],
+      "detailPattern": "https://zs\\.buaa\\.edu\\.cn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "北京理工大学-通知公告",
+    "type": "HTML",
+    "url": "https://admission.bit.edu.cn/f/newsCenter/articles/0278fac54ee5438f8d16717a277d38eb",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admission.bit.edu.cn/f/newsCenter/articles/0278fac54ee5438f8d16717a277d38eb"
+      ],
+      "detailPattern": "https://admission\\.bit\\.edu\\.cn/f/newsCenter/articles/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "北京师范大学-通知公告",
+    "type": "HTML",
+    "url": "https://admission.bnu.edu.cn/sdkx/index.html",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admission.bnu.edu.cn/sdkx/index.html"
+      ],
+      "detailPattern": "https://admission\\.bnu\\.edu\\.cn/sdkx/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "北京师范大学-简章章程",
+    "type": "HTML",
+    "url": "https://admission.bnu.edu.cn/zsxx/index.html",
+    "regionTag": "CN",
+    "categoryTag": "简章章程",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admission.bnu.edu.cn/zsxx/index.html"
+      ],
+      "detailPattern": "https://admission\\.bnu\\.edu\\.cn/zsxx/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "重庆大学-通知公告",
+    "type": "HTML",
+    "url": "https://zhaosheng.cqu.edu.cn/pub/desktopend/listnews?type=2&condition=Bulletin",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zhaosheng.cqu.edu.cn/pub/desktopend/listnews?type=2&condition=Bulletin"
+      ],
+      "detailPattern": "https://zhaosheng\\.cqu\\.edu\\.cn/pub/desktopend/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "大连理工大学-通知公告",
+    "type": "HTML",
+    "url": "https://zs.dlut.edu.cn/zsNews",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zs.dlut.edu.cn/zsNews"
+      ],
+      "detailPattern": "https://zs\\.dlut\\.edu\\.cn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "电子科技大学-通知公告",
+    "type": "HTML",
+    "url": "https://zs.uestc.edu.cn/category/7.html",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zs.uestc.edu.cn/category/7.html"
+      ],
+      "detailPattern": "https://zs\\.uestc\\.edu\\.cn/category/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "东北大学-通知公告",
+    "type": "HTML",
+    "url": "http://zs.neu.edu.cn/zsdt1/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "http://zs.neu.edu.cn/zsdt1/list.htm"
+      ],
+      "detailPattern": "http://zs\\.neu\\.edu\\.cn/zsdt1/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "东南大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.seu.edu.cn/_s85/zxdt_23610/listm.psp",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.seu.edu.cn/_s85/zxdt_23610/listm.psp"
+      ],
+      "detailPattern": "https://zsb\\.seu\\.edu\\.cn/_s85/zxdt_23610/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "复旦大学-招生动态",
+    "type": "HTML",
+    "url": "https://ao.fudan.edu.cn/36331/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生动态",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://ao.fudan.edu.cn/36331/list.htm"
+      ],
+      "detailPattern": "https://ao\\.fudan\\.edu\\.cn/36331/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "复旦大学-招生政策",
+    "type": "HTML",
+    "url": "https://ao.fudan.edu.cn/36330/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生政策",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://ao.fudan.edu.cn/36330/list.htm"
+      ],
+      "detailPattern": "https://ao\\.fudan\\.edu\\.cn/36330/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "国防科技大学-通知公告",
+    "type": "HTML",
+    "url": "https://www.nudt.edu.cn/bkzs/tzgg/index.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://www.nudt.edu.cn/bkzs/tzgg/index.htm"
+      ],
+      "detailPattern": "https://www\\.nudt\\.edu\\.cn/bkzs/tzgg/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "哈尔滨工业大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.hit.edu.cn/article/category/23d7292fbda0cda71ab7b92374b67c9c",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.hit.edu.cn/article/category/23d7292fbda0cda71ab7b92374b67c9c"
+      ],
+      "detailPattern": "https://zsb\\.hit\\.edu\\.cn/article/category/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "湖南大学-通知公告",
+    "type": "HTML",
+    "url": "https://admi.hnu.edu.cn/zsxxw/zxdt.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admi.hnu.edu.cn/zsxxw/zxdt.htm"
+      ],
+      "detailPattern": "https://admi\\.hnu\\.edu\\.cn/zsxxw/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "华南理工大学-通知公告",
+    "type": "HTML",
+    "url": "https://admission.scut.edu.cn/30767/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admission.scut.edu.cn/30767/list.htm"
+      ],
+      "detailPattern": "https://admission\\.scut\\.edu\\.cn/30767/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "华中科技大学-招生政策",
+    "type": "HTML",
+    "url": "https://zsb.hust.edu.cn/bkzn/zszc.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生政策",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.hust.edu.cn/bkzn/zszc.htm"
+      ],
+      "detailPattern": "https://zsb\\.hust\\.edu\\.cn/bkzn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "华中科技大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.hust.edu.cn/bkzn/tzgg.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.hust.edu.cn/bkzn/tzgg.htm"
+      ],
+      "detailPattern": "https://zsb\\.hust\\.edu\\.cn/bkzn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "吉林大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.jlu.edu.cn/list/2.html",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.jlu.edu.cn/list/2.html"
+      ],
+      "detailPattern": "https://zsb\\.jlu\\.edu\\.cn/list/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "兰州大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.lzu.edu.cn/zhaoshengdongtai/tongzhigonggao/index.html",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.lzu.edu.cn/zhaoshengdongtai/tongzhigonggao/index.html"
+      ],
+      "detailPattern": "https://zsb\\.lzu\\.edu\\.cn/zhaoshengdongtai/tongzhigonggao/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "南京大学-通知公告",
+    "type": "HTML",
+    "url": "https://bkzs.nju.edu.cn/static/front/nju/basic/html_cms/frontList.html?id=c8673b83bc704353aff9f917cc1e16b2",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://bkzs.nju.edu.cn/static/front/nju/basic/html_cms/frontList.html?id=c8673b83bc704353aff9f917cc1e16b2"
+      ],
+      "detailPattern": "https://bkzs\\.nju\\.edu\\.cn/static/front/nju/basic/html_cms/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "南开大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.nankai.edu.cn/index/zhaosheng.html",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.nankai.edu.cn/index/zhaosheng.html"
+      ],
+      "detailPattern": "https://zsb\\.nankai\\.edu\\.cn/index/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "清华大学-通知公告",
+    "type": "HTML",
+    "url": "https://www.join-tsinghua.edu.cn/zygg.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://www.join-tsinghua.edu.cn/zygg.htm"
+      ],
+      "detailPattern": "/info/[0-9]+/[0-9]+\\.htm$",
+      "selectors": {
+        "detailTitle": ".title h2",
+        "detailDate": ".title p",
+        "detailContent": ".v_news_content"
+      }
+    }
+  },
+  {
+    "name": "厦门大学-通知公告",
+    "type": "HTML",
+    "url": "https://zs.xmu.edu.cn/bks.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zs.xmu.edu.cn/bks.htm"
+      ],
+      "detailPattern": "https://zs\\.xmu\\.edu\\.cn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "山东大学-通知公告",
+    "type": "HTML",
+    "url": "https://www.bkzs.sdu.edu.cn/zszc.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://www.bkzs.sdu.edu.cn/zszc.htm"
+      ],
+      "detailPattern": "https://www\\.bkzs\\.sdu\\.edu\\.cn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "上海交通大学-通知公告",
+    "type": "HTML",
+    "url": "https://admissions.sjtu.edu.cn/importantColumnList?title=%E9%87%8D%E8%A6%81%E8%B5%84%E8%AE%AF&id=3810134",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admissions.sjtu.edu.cn/importantColumnList?title=%E9%87%8D%E8%A6%81%E8%B5%84%E8%AE%AF&id=3810134"
+      ],
+      "detailPattern": "https://admissions\\.sjtu\\.edu\\.cn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "四川大学-通知公告",
+    "type": "HTML",
+    "url": "https://zs.scu.edu.cn/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1091",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zs.scu.edu.cn/list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1091"
+      ],
+      "detailPattern": "https://zs\\.scu\\.edu\\.cn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "天津大学-通知公告",
+    "type": "HTML",
+    "url": "https://zs.tju.edu.cn/ym21/bkzn/tzgg.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zs.tju.edu.cn/ym21/bkzn/tzgg.htm"
+      ],
+      "detailPattern": "https://zs\\.tju\\.edu\\.cn/ym21/bkzn/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "同济大学-通知公告",
+    "type": "HTML",
+    "url": "https://bkzs.tongji.edu.cn/dynamic/notice",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://bkzs.tongji.edu.cn/dynamic/notice"
+      ],
+      "detailPattern": "https://bkzs\\.tongji\\.edu\\.cn/dynamic/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "武汉大学-招生动态",
+    "type": "HTML",
+    "url": "https://aoff.whu.edu.cn/zsxx1/tzgg.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生动态",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://aoff.whu.edu.cn/zsxx1/tzgg.htm"
+      ],
+      "detailPattern": "https://aoff\\.whu\\.edu\\.cn/zsxx1/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "武汉大学-招生政策",
+    "type": "HTML",
+    "url": "https://aoff.whu.edu.cn/zsxx1/zsz.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生政策",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://aoff.whu.edu.cn/zsxx1/zsz.htm"
+      ],
+      "detailPattern": "https://aoff\\.whu\\.edu\\.cn/zsxx1/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "西安交通大学-通知公告",
+    "type": "HTML",
+    "url": "https://zs.xjtu.edu.cn/zsxx1/zskx.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zs.xjtu.edu.cn/zsxx1/zskx.htm"
+      ],
+      "detailPattern": "https://zs\\.xjtu\\.edu\\.cn/zsxx1/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "西北工业大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.nwpu.edu.cn/f/newsCenter/articles/d89a663f8c804f6eb3576940f3b25be7",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.nwpu.edu.cn/f/newsCenter/articles/d89a663f8c804f6eb3576940f3b25be7"
+      ],
+      "detailPattern": "https://zsb\\.nwpu\\.edu\\.cn/f/newsCenter/articles/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "西北农林科技大学-招生指南",
+    "type": "HTML",
+    "url": "https://zhshw.nwsuaf.edu.cn/zszn/zsdt/index.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生指南",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zhshw.nwsuaf.edu.cn/zszn/zsdt/index.htm"
+      ],
+      "detailPattern": "https://zhshw\\.nwsuaf\\.edu\\.cn/zszn/zsdt/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "西北农林科技大学-招生政策",
+    "type": "HTML",
+    "url": "https://zhshw.nwsuaf.edu.cn/zszn/zszc/index.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生政策",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zhshw.nwsuaf.edu.cn/zszn/zszc/index.htm"
+      ],
+      "detailPattern": "https://zhshw\\.nwsuaf\\.edu\\.cn/zszn/zszc/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "浙江大学-通知公告",
+    "type": "HTML",
+    "url": "https://zdzsc.zju.edu.cn/zxgg/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zdzsc.zju.edu.cn/zxgg/list.htm"
+      ],
+      "detailPattern": "https://zdzsc\\.zju\\.edu\\.cn/zxgg/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中国海洋大学-招生快讯",
+    "type": "HTML",
+    "url": "https://bkzs.ouc.edu.cn/7210/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生快讯",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://bkzs.ouc.edu.cn/7210/list.htm"
+      ],
+      "detailPattern": "https://bkzs\\.ouc\\.edu\\.cn/7210/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中国海洋大学-信息公开",
+    "type": "HTML",
+    "url": "https://bkzs.ouc.edu.cn/xxgk_17825/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "信息公开",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://bkzs.ouc.edu.cn/xxgk_17825/list.htm"
+      ],
+      "detailPattern": "https://bkzs\\.ouc\\.edu\\.cn/xxgk_17825/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中国科学技术大学-通知公告",
+    "type": "HTML",
+    "url": "https://zsb.ustc.edu.cn/tzgg/list.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zsb.ustc.edu.cn/tzgg/list.htm"
+      ],
+      "detailPattern": "https://zsb\\.ustc\\.edu\\.cn/tzgg/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中国农业大学-通知公告",
+    "type": "HTML",
+    "url": "https://jwzs.cau.edu.cn/col/col4528/index.html",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://jwzs.cau.edu.cn/col/col4528/index.html"
+      ],
+      "detailPattern": "https://jwzs\\.cau\\.edu\\.cn/col/col4528/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中国人民大学-通知公告",
+    "type": "HTML",
+    "url": "https://rdzs.ruc.edu.cn/cms/item/?cat=72&parent=1",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://rdzs.ruc.edu.cn/cms/item/?cat=72&parent=1"
+      ],
+      "detailPattern": "https://rdzs\\.ruc\\.edu\\.cn/cms/item/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中南大学-招生简章",
+    "type": "HTML",
+    "url": "https://zhaosheng.csu.edu.cn/zsjz/zsjz.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生简章",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zhaosheng.csu.edu.cn/zsjz/zsjz.htm"
+      ],
+      "detailPattern": "https://zhaosheng\\.csu\\.edu\\.cn/zsjz/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中南大学-招生资讯",
+    "type": "HTML",
+    "url": "https://zhaosheng.csu.edu.cn/zszx/zszx.htm",
+    "regionTag": "CN",
+    "categoryTag": "招生资讯",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zhaosheng.csu.edu.cn/zszx/zszx.htm"
+      ],
+      "detailPattern": "https://zhaosheng\\.csu\\.edu\\.cn/zszx/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中山大学-最新公告",
+    "type": "HTML",
+    "url": "https://admission.sysu.edu.cn/f/newsCenter/articles/525eb0693a6f4d3a879957b64d214e9c",
+    "regionTag": "CN",
+    "categoryTag": "最新公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admission.sysu.edu.cn/f/newsCenter/articles/525eb0693a6f4d3a879957b64d214e9c"
+      ],
+      "detailPattern": "https://admission\\.sysu\\.edu\\.cn/f/newsCenter/articles/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中山大学-政策解读",
+    "type": "HTML",
+    "url": "https://admission.sysu.edu.cn/f/newsCenter/articles/2932f0e1d1f24d5fa2bfcd5d40aeb9ac",
+    "regionTag": "CN",
+    "categoryTag": "政策解读",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://admission.sysu.edu.cn/f/newsCenter/articles/2932f0e1d1f24d5fa2bfcd5d40aeb9ac"
+      ],
+      "detailPattern": "https://admission\\.sysu\\.edu\\.cn/f/newsCenter/articles/.*",
+      "selectors": {}
+    }
+  },
+  {
+    "name": "中央民族大学-通知公告",
+    "type": "HTML",
+    "url": "https://zb.muc.edu.cn/content/zs/9a649c21-f0cf-11ee-a4af-00163e36a0b0.htm",
+    "regionTag": "CN",
+    "categoryTag": "通知公告",
+    "priority": 3,
+    "isActive": false,
+    "fetchIntervalMinutes": 60,
+    "crawlConfig": {
+      "listUrls": [
+        "https://zb.muc.edu.cn/content/zs/9a649c21-f0cf-11ee-a4af-00163e36a0b0.htm"
+      ],
+      "detailPattern": "https://zb\\.muc\\.edu\\.cn/content/zs/.*",
+      "selectors": {}
+    }
+  }
+]

@@ -1,0 +1,9 @@
+name,tags,reason,notes
+北京大学,985/211,list_not_found,"https://pku.edu.cn/tzgg/ [score=-1.0, dates=0, links=0, hits=] | https://pku.edu.cn/tzgg/index.htm [score=-1.0, dates=0, links=0, hits=] | https://pku.edu.cn/notice/ [score=-1.0, dates=0, links=0, hits=]"
+中国人民大学,985/211,list_not_found,"https://ruc.edu.cn/tzgg/ [score=-1.0, dates=0, links=0, hits=] | https://ruc.edu.cn/tzgg/index.htm [score=-1.0, dates=0, links=0, hits=] | https://ruc.edu.cn/notice/ [score=-1.0, dates=0, links=0, hits=]"
+清华大学,985/211,list_not_found,"https://tsinghua.edu.cn/tzgg/ [score=-1.0, dates=0, links=0, hits=] | https://tsinghua.edu.cn/tzgg/index.htm [score=-1.0, dates=0, links=0, hits=] | https://tsinghua.edu.cn/notice/ [score=-1.0, dates=0, links=0, hits=]"
+中国农业大学,985/211,list_not_found,"https://cau.edu.cn/tzgg/ [score=-1.0, dates=0, links=0, hits=] | https://cau.edu.cn/tzgg/index.htm [score=-1.0, dates=0, links=0, hits=] | https://cau.edu.cn/notice/ [score=-1.0, dates=0, links=0, hits=]"
+北京师范大学,985/211,timeout,TimeoutError
+中央民族大学,985/211,list_not_found,"https://muc.edu.cn/tzgg/ [score=-1.0, dates=0, links=0, hits=] | https://muc.edu.cn/tzgg/index.htm [score=-1.0, dates=0, links=0, hits=] | https://muc.edu.cn/notice/ [score=-1.0, dates=0, links=0, hits=]"
+南开大学,985/211,list_not_found,
+天津大学,985/211,list_not_found,"https://arch.tju.edu.cn/info/1165/5151.htm [score=-1.0, dates=0, links=0, hits=] | https://tjusee.tju.edu.cn/info/1126/4667.htm [score=-1.0, dates=0, links=0, hits=] | http://gs.tju.edu.cn/zsgz/yzb_bs/yzb_bs_zsjz.htm [score=-1.0, dates=0, links=0, hits=]"

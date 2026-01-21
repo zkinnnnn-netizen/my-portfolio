@@ -1,0 +1,48 @@
+{
+  "name": "media-radar",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"commonjs\"} prisma/seed.ts"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "@prisma/client": "5.22.0",
+    "cheerio": "^1.0.0-rc.12",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "cookies-next": "^4.1.1",
+    "date-fns": "^3.6.0",
+    "jsdom": "^24.0.0",
+    "lucide-react": "^0.378.0",
+    "next": "15.0.0",
+    "openai": "^6.16.0",
+    "pdfkit": "^0.13.0",
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "rss-parser": "^3.13.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "15.0.0",
+    "postcss": "^8.4.38",
+    "prisma": "5.22.0",
+    "tailwindcss": "3.4.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}

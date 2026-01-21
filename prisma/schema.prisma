@@ -1,0 +1,97 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Enums not supported in SQLite, managing in application logic
+// SourceType: RSS, HTML
+// ItemStatus: PENDING, APPROVED, REJECTED
+
+model Source {
+  id                  String     @id @default(uuid())
+  name                String
+  type                String     // Enum: RSS, HTML
+  url                 String     @unique
+  regionTag           String?
+  categoryTag         String?
+  priority            Int        @default(3) // 1-5
+  isActive            Boolean    @default(true)
+  fetchIntervalMinutes Int       @default(60)
+  lastFetchedAt       DateTime?
+  lastError           String?
+  lastRunStats        String?    // JSON: { fetched, upserted, dedupSkipped, auditsWritten, pushed, skippedByLimit, errors }
+  
+  // Crawling Configuration
+  crawlConfig         String?    // JSON: { listUrls: [], detailPattern: "", selectors: {} }
+  etag                String?
+  lastModified        String?
+
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+
+  items               Item[]
+}
+
+model Item {
+  id            String     @id @default(uuid())
+  title         String
+  url           String
+  canonicalUrl  String
+  publishedAt   DateTime?
+  fetchedAt     DateTime   @default(now())
+  rawText       String     // SQLite stores String as TEXT
+  sourceId      String
+  source        Source     @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  status        String     @default("PENDING") // Enum: PENDING, APPROVED, REJECTED, SKIPPED
+  hash          String?
+  meta          String?    // JSON string
+  digest        String?    // JSON string
+  
+  // Push Status
+  pushedAt      DateTime?
+  skipReason    String?
+
+  // Crawling Metadata
+  etag          String?
+  lastModified  String?
+
+  events        Event[]
+  auditLogs     AuditLog[]
+
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@unique([sourceId, canonicalUrl])
+}
+
+model Event {
+  id              String   @id @default(uuid())
+  itemId          String
+  item            Item     @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  type            String   
+  date            DateTime
+  timezone        String   @default("Asia/Shanghai")
+  confidence      Float    @default(1.0)
+  isManualOverride Boolean @default(false)
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model AuditLog {
+  id           String   @id @default(uuid())
+  itemId       String?
+  item         Item?    @relation(fields: [itemId], references: [id])
+  action       String
+  result       String?
+  reason       String?
+  originalData String
+  resultData   String?
+  reviewer     String
+  isImportant  Boolean  @default(false)
+  createdAt    DateTime @default(now())
+}

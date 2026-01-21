@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "name": "北京航空航天大学 通知公告 985",
+      "type": "HTML",
+      "url": "http://zbcg.buaa.edu.cn/",
+      "regionTag": "CN",
+      "categoryTag": "通知公告",
+      "priority": 3,
+      "isActive": false,
+      "fetchIntervalMinutes": 60,
+      "crawlConfig": "{\"listUrls\":[\"http://zbcg.buaa.edu.cn/\"],\"detailPattern\":\"/.*\\\\.htm\",\"selectors\":{}}",
+      "confidence": 1,
+      "domainSource": "demired",
+      "notes": "[domain:demired] direct_match [home_extended]"
+    },
+    {
+      "name": "北京理工大学 通知公告 985",
+      "type": "HTML",
+      "url": "http://grd.bit.edu.cn/tzgg1/index.htm",
+      "regionTag": "CN",
+      "categoryTag": "通知公告",
+      "priority": 3,
+      "isActive": false,
+      "fetchIntervalMinutes": 60,
+      "crawlConfig": "{\"listUrls\":[\"http://grd.bit.edu.cn/tzgg1/index.htm\"],\"detailPattern\":\"/tzgg1/.*\\\\.htm\",\"selectors\":{}}",
+      "confidence": 1,
+      "domainSource": "demired",
+      "notes": "[domain:demired] direct_match [home_extended]"
+    }
+  ]
+}

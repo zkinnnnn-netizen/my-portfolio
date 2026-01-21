@@ -1,0 +1,3 @@
+name,type,url,regionTag,categoryTag,priority,isActive,fetchIntervalMinutes,crawlConfig,confidence,domainSource,notes
+北京航空航天大学 通知公告 985,HTML,http://zbcg.buaa.edu.cn/,CN,通知公告,3,false,60,"{""listUrls"":[""http://zbcg.buaa.edu.cn/""],""detailPattern"":""/.*\\.htm"",""selectors"":{}}",1,demired,[domain:demired] direct_match [home_extended]
+北京理工大学 通知公告 985,HTML,http://grd.bit.edu.cn/tzgg1/index.htm,CN,通知公告,3,false,60,"{""listUrls"":[""http://grd.bit.edu.cn/tzgg1/index.htm""],""detailPattern"":""/tzgg1/.*\\.htm"",""selectors"":{}}",1,demired,[domain:demired] direct_match [home_extended]

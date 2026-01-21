@@ -1,0 +1,17 @@
+name: Media Radar Ingest
+
+on:
+  schedule:
+    # Run 3 times a day (e.g., 8am, 1pm, 6pm UTC+8 -> 00, 05, 10 UTC)
+    - cron: '0 0,5,10 * * *'
+  workflow_dispatch:
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Ingest API
+        run: |
+          curl -X POST ${{ secrets.INTAKE_URL }} \
+          -H "x-intake-token: ${{ secrets.INTAKE_TOKEN }}" \
+          -H "Content-Type: application/json"
