@@ -5,6 +5,11 @@ export async function POST(request: Request) {
   const { password } = await request.json();
   const adminPassword = process.env.ADMIN_PASSWORD;
 
+  if (!adminPassword) {
+    console.error('ADMIN_PASSWORD is not set in environment variables');
+    return NextResponse.json({ error: 'Server configuration error' }, { status: 500 });
+  }
+
   if (password === adminPassword) {
     const cookieStore = await cookies();
     cookieStore.set('session', 'authenticated', {
