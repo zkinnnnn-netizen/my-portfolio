@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  serverExternalPackages: ['pdfkit'],
   eslint: {
     // ✅ 让 Vercel build 不因 ESLint error 失败
     ignoreDuringBuilds: true,
