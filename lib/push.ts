@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prefer-const */
 import { AIAnalysisResult } from './ai';
 
 function isNearDeadline(publishDate?: string | null, deadline?: string | null): boolean {

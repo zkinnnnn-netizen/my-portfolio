@@ -10,8 +10,21 @@ jobs:
   ingest:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Ingest API
+      - name: Validate Secrets
+        env:
+          INTAKE_URL: ${{ secrets.INTAKE_URL }}
         run: |
-          curl -X POST ${{ secrets.INTAKE_URL }} \
-          -H "x-intake-token: ${{ secrets.INTAKE_TOKEN }}" \
-          -H "Content-Type: application/json"
+          if [ -z "$INTAKE_URL" ]; then
+            echo "::error::Missing INTAKE_URL secret. Please configure it in Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+
+      - name: Trigger Ingest API
+        env:
+          INTAKE_URL: ${{ secrets.INTAKE_URL }}
+          INTAKE_TOKEN: ${{ secrets.INTAKE_TOKEN }}
+        run: |
+          curl -sS -X POST "$INTAKE_URL" \
+            -H "x-intake-token: $INTAKE_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"source":"github-actions"}'

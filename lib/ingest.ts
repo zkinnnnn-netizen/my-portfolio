@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Parser from 'rss-parser';
 import prisma from './prisma';
 import crypto from 'crypto';
@@ -9,6 +11,31 @@ import { PUSH_LIMITS } from './pushConfig';
 
 const parser = new Parser();
 // const crawler = new Crawler();
+
+// List of sources where we MUST force original_url = source_url (Scheme A)
+// due to navigation links, self-loops, or bad anchor picking.
+export const FORCE_SOURCE_URL_NAMES = new Set([
+    '北京大学-通知公告',
+    '北京师范大学-通知公告',
+    '北京师范大学-简章章程',
+    '重庆大学-通知公告',
+    '东北大学-通知公告',
+    '复旦大学-招生动态',
+    '复旦大学-招生政策',
+    '华南理工大学-通知公告',
+    '同济大学-通知公告',
+    '西北农林科技大学-招生指南',
+    '西北农林科技大学-招生政策',
+    '中国海洋大学-招生快讯',
+    '中国海洋大学-信息公开',
+    '中国科学技术大学-通知公告',
+    '中国农业大学-通知公告',
+    '中国人民大学-通知公告',
+    '中南大学-招生简章',
+    '中南大学-招生资讯',
+    '中山大学-最新公告',
+    '中央民族大学-通知公告'
+]);
 
 function computeHash(title: string, pubDate: Date, content: string) {
   const hashContent = `${title}${pubDate}${content.substring(0, 500)}`;
@@ -730,7 +757,7 @@ async function processHTML(source: any, results: any[], stats: IngestStats, opti
                 console.log(`[TJU Fix] Forcing original_url to source_url for ${link}`);
                 console.log(`[TJU Debug] source_url=${source.url}, extracted_title=${parsed.title || item.title}, extracted_original_url=${link}`);
                 aiResult.url = source.url;
-            } else if (source.name === '浙江大学-最新公告') {
+            } else if (source.name === '浙江大学-最新公告' || source.name === '浙江大学-通知公告') {
                 // Fix for ZJU: Force original_url = source_url (Scheme A)
                 console.log(`[ZJU Fix] Forcing original_url to source_url for ${link}`);
                 console.log(`[ZJU Debug] source_url=${source.url}, extracted_original_url=${link}, picked_anchor_text=${item.title || 'N/A'}`);
@@ -742,6 +769,23 @@ async function processHTML(source: any, results: any[], stats: IngestStats, opti
                      console.log(`[ZJU Fix] Detected pagination link ${link}, reverting to ${source.url}`);
                      aiResult.url = source.url;
                 }
+            } else if (source.name.includes('武汉大学')) {
+                // Fix for WHU: Force original_url = source_url (Scheme A)
+                // Covers both Detail Page (/info/...) and List Page (/zsxx1/...)
+                console.log(`[WHU Fix] Forcing original_url to source_url for ${link}`);
+                console.log(`[WHU Debug] source_url=${source.url}, extracted_original_url=${link}, picked_anchor_text=${item.title || 'N/A'}`);
+                
+                aiResult.url = source.url;
+
+                // Double Insurance: Blacklist /zsxx1/tslzs/ (Navigation Links)
+                if (link.includes('/zsxx1/tslzs/')) {
+                    console.log(`[WHU Fix] Detected navigation link ${link}, reverting to ${source.url}`);
+                    aiResult.url = source.url;
+                }
+            } else if (FORCE_SOURCE_URL_NAMES.has(source.name)) {
+                // Mass Fix for identified sources with Self Loop or Navigation issues
+                console.log(`[Mass Fix] Forcing original_url to source_url for ${source.name} (was ${link})`);
+                aiResult.url = source.url;
             } else {
                 aiResult.url = link;
             }

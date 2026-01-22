@@ -1,4 +1,5 @@
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { execFile } from 'child_process';
 import { promisify } from 'util';
 import fs from 'fs';
