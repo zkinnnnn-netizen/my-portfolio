@@ -4,6 +4,9 @@ import prisma from '@/lib/prisma';
 import * as XLSX from 'xlsx';
 import PDFDocument from 'pdfkit';
 
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 async function getLogsFromRequest(request: Request) {
   const { searchParams } = new URL(request.url);
   const from = searchParams.get('from');
