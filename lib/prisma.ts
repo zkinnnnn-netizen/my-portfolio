@@ -1,4 +1,17 @@
 import { PrismaClient } from '@prisma/client';
+import { getDatabaseUrl, getDirectUrl } from './env';
+
+// Ensure environment variables are set before Prisma Client is initialized
+const dbUrl = getDatabaseUrl();
+const directUrl = getDirectUrl();
+
+if (dbUrl && !process.env.DATABASE_URL) {
+  process.env.DATABASE_URL = dbUrl;
+}
+
+if (directUrl && !process.env.DIRECT_URL) {
+  process.env.DIRECT_URL = directUrl;
+}
 
 const prismaClientSingleton = () => {
   return new PrismaClient();

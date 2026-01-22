@@ -3,11 +3,22 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
-  const rows = await prisma.source.findMany({
-    orderBy: { priority: 'desc' }
-  });
-  const sources = rows.map((row: any) => {
+  try {
+    // Debug logging for observability
+    const dbUrl = process.env.DATABASE_URL || '';
+    const isPostgres = dbUrl.startsWith('postgres');
+    console.log(`[API/Sources] Fetching sources. DB Configured: ${!!dbUrl}, IsPostgres: ${isPostgres}`);
+    
+    const rows = await prisma.source.findMany({
+      orderBy: { priority: 'desc' }
+    });
+
+    console.log(`[API/Sources] Found ${rows.length} sources`);
+
+    const sources = rows.map((row: any) => {
     let stats: any = {};
     if (row.lastRunStats) {
       try {
@@ -31,6 +42,10 @@ export async function GET() {
     };
   });
   return NextResponse.json(sources);
+  } catch (e: any) {
+    console.error('[API/Sources] Error fetching sources:', e);
+    return NextResponse.json({ error: e.message || 'Failed to fetch sources' }, { status: 500 });
+  }
 }
 
 export async function POST(request: Request) {

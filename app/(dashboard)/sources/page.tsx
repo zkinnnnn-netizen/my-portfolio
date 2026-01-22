@@ -3,6 +3,9 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 'use client';
 
+// Force dynamic rendering to ensure fresh data
+// Note: revalidate cannot be exported from a Client Component ('use client')
+
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import * as XLSX from 'xlsx';
@@ -80,7 +83,7 @@ export default function SourcesPage() {
   }, []);
 
   const fetchSources = async () => {
-    const res = await fetch('/api/sources');
+    const res = await fetch('/api/sources', { cache: 'no-store' });
     const data = await res.json();
     setSources(data);
   };
