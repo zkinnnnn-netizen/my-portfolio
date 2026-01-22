@@ -751,12 +751,7 @@ async function processHTML(source: any, results: any[], stats: IngestStats, opti
             const aiResult = await extractInformation(parsed.content, link, source.name);
 
             // Force digest.url to canonicalUrl to prevent AI from Hallucinating (e.g. login page)
-            // Fix for TJU: Force original_url = source_url (Scheme A)
-            if (source.name === '天津大学-通知公告') {
-                console.log(`[TJU Fix] Forcing original_url to source_url for ${link}`);
-                console.log(`[TJU Debug] source_url=${source.url}, extracted_title=${parsed.title || item.title}, extracted_original_url=${link}`);
-                aiResult.url = source.url;
-            } else if (source.name === '浙江大学-最新公告' || source.name === '浙江大学-通知公告') {
+            if (source.name === '浙江大学-最新公告' || source.name === '浙江大学-通知公告') {
                 // Fix for ZJU: Force original_url = source_url (Scheme A)
                 console.log(`[ZJU Fix] Forcing original_url to source_url for ${link}`);
                 console.log(`[ZJU Debug] source_url=${source.url}, extracted_original_url=${link}, picked_anchor_text=${item.title || 'N/A'}`);
