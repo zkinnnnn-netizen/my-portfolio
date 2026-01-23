@@ -475,7 +475,7 @@
       "listUrls": [
         "https://zs.tju.edu.cn/ym21/bkzn/tzgg.htm"
       ],
-      "detailPattern": "https://zs\\.tju\\.edu\\.cn/ym21/bkzn/.*",
+      "detailPattern": "https://zs\\.tju\\.edu\\.cn/info/.*",
       "selectors": {}
     }
   },

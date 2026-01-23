@@ -527,12 +527,6 @@ async function processHTML(source: any, results: any[], stats: IngestStats, opti
         }
     }
 
-    // Patch for TJU to exclude navigation links and finding real items
-    if (source.name === '天津大学-通知公告') {
-        // Only match /info/ (real items), exclude list page itself
-        config.detailPattern = 'https://zs\\.tju\\.edu\\.cn/info/.*';
-    }
-
     const crawler = new Crawler(config);
 
     const listUrls = config.listUrls && config.listUrls.length > 0 ? config.listUrls : [source.url];
