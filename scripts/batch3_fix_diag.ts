@@ -1,4 +1,8 @@
 
+import { loadEnvConfig } from '@next/env';
+
+loadEnvConfig(process.cwd());
+
 import { PrismaClient } from '@prisma/client';
 import { ingestAll } from '../lib/ingest';
 import { execFileSync } from 'child_process';

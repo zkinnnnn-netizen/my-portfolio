@@ -1,4 +1,8 @@
 
+import { loadEnvConfig } from '@next/env';
+
+loadEnvConfig(process.cwd());
+
 import fs from 'fs';
 import path from 'path';
 import { FORCE_SOURCE_URL_NAMES } from '../lib/ingest';

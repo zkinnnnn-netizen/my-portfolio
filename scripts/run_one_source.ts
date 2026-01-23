@@ -1,3 +1,7 @@
+import { loadEnvConfig } from '@next/env';
+
+loadEnvConfig(process.cwd());
+
 import { ingestAll } from '../lib/ingest';
 import { PrismaClient } from '@prisma/client';
 

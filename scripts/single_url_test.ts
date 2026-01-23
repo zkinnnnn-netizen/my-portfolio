@@ -1,6 +1,10 @@
 
 process.loadEnvFile();
 import { Crawler } from '../lib/crawler';
+import { loadEnvConfig } from '@next/env';
+
+loadEnvConfig(process.cwd());
+
 import { extractInformation } from '../lib/ai';
 import { buildWeComMarkdown, pushToWeCom } from '../lib/push';
 
