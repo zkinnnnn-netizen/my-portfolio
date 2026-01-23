@@ -83,9 +83,17 @@ export default function SourcesPage() {
   }, []);
 
   const fetchSources = async () => {
-    const res = await fetch('/api/sources', { cache: 'no-store' });
-    const data = await res.json();
-    setSources(data);
+    try {
+      const res = await fetch('/api/sources', { cache: 'no-store' });
+      if (!res.ok) {
+        throw new Error(`Failed to fetch sources: ${res.status} ${res.statusText}`);
+      }
+      const data = await res.json();
+      setSources(data);
+    } catch (e) {
+      console.error('Error fetching sources:', e);
+      // Optional: show toast or error state
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {

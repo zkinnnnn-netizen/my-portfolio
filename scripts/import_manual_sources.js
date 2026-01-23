@@ -1,5 +1,6 @@
 
-require('dotenv').config();
+const { loadEnvConfig } = require('@next/env');
+loadEnvConfig(process.cwd());
 
 const { PrismaClient } = require('@prisma/client');
 const fs = require('fs');

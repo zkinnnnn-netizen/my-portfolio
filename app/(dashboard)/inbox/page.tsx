@@ -36,10 +36,19 @@ export default function InboxPage() {
     const params = new URLSearchParams();
     if (statusFilter) params.set('status', statusFilter);
     if (hours) params.set('hours', String(hours));
-    const res = await fetch('/api/items?' + params.toString());
-    const data = await res.json();
-    setItems(data);
-    setLoading(false);
+    try {
+      const res = await fetch('/api/items?' + params.toString(), { cache: 'no-store' });
+      if (!res.ok) {
+        throw new Error(`Failed to fetch items: ${res.status} ${res.statusText}`);
+      }
+      const data = await res.json();
+      setItems(data);
+    } catch (e) {
+      console.error(e);
+      setToast({ type: 'error', message: '加载列表失败，请稍后重试' });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const triggerIngest = async () => {
