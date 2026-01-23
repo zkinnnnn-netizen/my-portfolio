@@ -1,4 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { loadEnvConfig } from '@next/env';
+loadEnvConfig(process.cwd());
+
 import { PrismaClient as PgClient } from "@prisma/client";
 // @ts-ignore
 import { PrismaClient as SqliteClient } from "../generated/sqlite-client";

@@ -1,3 +1,5 @@
+const { loadEnvConfig } = require('@next/env');
+loadEnvConfig(process.cwd());
 
 const fs = require('fs');
 const path = require('path');

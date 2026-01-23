@@ -1,3 +1,6 @@
+import { loadEnvConfig } from '@next/env';
+loadEnvConfig(process.cwd());
+
 import { PrismaClient } from '@prisma/client';
 import { Crawler } from '../lib/crawler';
 import * as cheerio from 'cheerio';
